@@ -1,6 +1,6 @@
 require('dotenv').config();
 const app = require('./app');
-const { connectDb } = require('./libs/database');
+const { connectDb } = require('./helpers/database');
 
 function normalizePort(port) {
   if (typeof port === 'string') {

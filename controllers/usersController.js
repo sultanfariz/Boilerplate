@@ -1,6 +1,6 @@
 const User = require('../models/User');
-const { response, isEmpty, hashPassword } = require('../libs/bcrypt');
-const { NotFoundError } = require('../errors');
+const { response, isEmpty, hashPassword } = require('../helpers/bcrypt');
+const { NotFoundError } = require('../exceptions');
 
 module.exports = {
   getAll: async (req, res) => {
